@@ -51,7 +51,7 @@ public class Main {
 
         try (FileOutputStream fos = new FileOutputStream(fileName)){
             int i;
-            while ( (i = is.read()) != -1) {
+            while ((i = is.read()) != -1) {
                 fos.write(i);
             }
             System.out.println("Successfully write to file " + fileName);
